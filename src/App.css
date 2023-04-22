@@ -1,42 +1,62 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+
+/* header tambem e block */
+header{
+  color: blueviolet;
+  background-color: beige;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+/* h1 e sempre block, ou seja uma linha nova e vai ocupar 100 do container  */
+.headerLogo span{
+  font-size: 2rem;
+
+}
+
+.headerLogo{
+  display: flex;
+  align-items: center;
+  /* usei o flex gorw para empurrar os outros items para direita (location and cart) */
+  flex-grow: 1;
+}
+
+/*  */
+.headerLogo svg{
+  font-size: 4rem;
+}
+.headerLocation {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  background-color: lightblue;
+  padding: 0.75rem 1rem;
+}
+
+.headerLocation svg{
+  font-size: 1.5rem;
+
+}
+
+.headerCart{
+  display: flex;
+  align-items: center;
+  margin: 0.3rem;
+  background-color: lightpink;
+  padding: 0.5rem;
+}
+
+.headerCart svg{
+  font-size: 1.7rem;
+}
+
+.headerCart span{
+  position: absolute;
+  top: 1.5rem;
+  right: 0.6rem;
+  background-color: green;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
   text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
